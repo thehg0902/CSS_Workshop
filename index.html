@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recipy for Custom PC</title>
+
+    <!-- linking css file-->
+    <link rel="stylesheet" href = "style.css">
+    <!-- 'Anton', sans-serif -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+     rel="stylesheet">
+
+
+     <!-- font-family: 'Comfortaa', cursive; -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+
+     <script src="script.js"></script>
+
+  </head>
+
+
+
+  <body>
+
+
+
+    <div class="headders">
+
+
+      <div class="head_container">
+        <h1>HOW TO BUILD YOUR OWN CUSTOM PC</h1>
+          <div class="headder_img">
+            <img src="assets/Full.gif" alt="sdf"
+            style="height:auto; max-width:100%; width:500px; float:right;
+            padding-right:0px;margin-left:100px">
+          </div>
+          <br></br>
+          <div class="headder_text">
+            <center>
+            <p>COMPONENTS:</p>
+          </center>
+          </div>
+
+            <div class="details">
+              <Center>
+            - Center Processing Unit -
+            <br>
+            - CPU Cooling -
+            <br>
+            - Motherboard -
+            <br>
+            - Power Supply -
+            <br>
+            - Random Access Memory -
+            <br>
+            - Graphics Processing Unit -
+            <br>
+            - Case -
+            <br>
+            - Memory -
+            <br>
+          </center>
+            </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="opening">
+      <p>PRESS TO</p>
+      <center>
+      <button id="scrollDown" onclick="Scroll()">
+        test
+      </button>
+      </center>
+      <p>START EXPLORING</p>
+    </div>
+
+
+    <div class="banner" id="banner">
+        <div>
+          1
+        </div>
+        <div>
+          2
+        </div>
+        <div>
+          3
+        </div>
+        <div>
+          4
+        </div>
+        <div>
+          5
+        </div>
+        <div>
+          6
+        </div>
+        <div>
+          7
+        </div>
+        <div>
+          8
+        </div>
+    </div>
+
+    <div class="content">
+
+      <section id="sec1">
+        <div class="text">
+          <h1>Title 1</h1>
+          <p>details</p>
+        </div>
+      </section>
+
+      <section id="sec2">
+        <div class="text">
+          <h1>Title 2</h1>
+          <p>details</p>
+        </div>
+      </section>
+
+      <section id="sec3">
+        <div class="text">
+          <h1>Title 3</h1>
+          <p>details</p>
+        </div>
+      </section>
+
+      <section id="sec4">
+        <div class="text">
+          <h1>Title 4</h1>
+          <p>details</p>
+        </div>
+      </section>
+
+      <section id="sec5">
+        <div class="text">
+          <h1>Title 5</h1>
+          <p>details</p>
+        </div>
+      </section>
+
+      <section id="sec6">
+        <div class="text">
+          <h1>Title 6</h1>
+          <p>details</p>
+        </div>
+      </section>
+
+      <section id="sec7">
+        <div class="text">
+          <h1>Title 7</h1>
+          <p>details</p>
+        </div>
+      </section>
+
+      <section id="sec8">
+        <div class="text">
+          <h1>Title 8</h1>
+          <p>details</p>
+        </div>
+      </section>
+
+
+
+
+
+    </div>
+
+
+
+    <button id="none" class= "home" onclick="ScrollTop()">
+    </button>
+
+
+
+
+    <script>
+    window.onscroll = function(){topStick()};
+
+    var banner = document.getElementById("banner");
+    var homeBut = document.getElementById("none");
+    var stick = banner.offsetTop;
+
+    function topStick(){
+      if(window.pageYOffset > stick){
+        banner.classList.add("stickTop");
+        homeBut.id = "scrollTop";
+
+
+      }else{
+        banner.classList.remove("stickTop");
+        homeBut.id = "none";
+      }
+    }
+    </script>
+
+  </body>
+</html>
