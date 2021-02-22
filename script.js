@@ -10,7 +10,9 @@ function ScrollTop(){
   index =0;
   console.log(index);
 }
-
+function first(){
+  document.getElementById('sec1').scrollIntoView({behavior:"smooth"});
+}
 
 
 
@@ -54,9 +56,6 @@ console.log(index);
 
 
 
-function page1(){
-  document.getElementById('sec1').scrollIntoView({behavior:"smooth"});
-}
 function page2(){
   document.getElementById('sec2').scrollIntoView({behavior:"smooth"});
 }
@@ -77,4 +76,7 @@ function page7(){
 }
 function page8(){
   document.getElementById('sec8').scrollIntoView({behavior:"smooth"});
+}
+function page9(){
+  document.getElementById('sec9').scrollIntoView({behavior:"smooth"});
 }

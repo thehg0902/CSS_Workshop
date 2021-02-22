@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Recipy for Custom PC</title>
+    <title>Custom PC</title>
 
     <!-- linking css file-->
     <link rel="stylesheet" href = "style.css">
@@ -20,20 +20,32 @@
      <script src="script.js"></script>
 
   </head>
-
-
-
   <body>
 
 
 
     <div class="headders">
+      <br><br>
+      <h3>HOW TO BUILD</h3>
+      <h1>CUSTOMIZED PC</h1>
+        <hr style="width:60vh;">
+      <br>
+      <br>
 
+    <button class="start btn1" name="button" onclick="first()">Show Me</button>
+
+
+    </div>
+
+
+
+
+
+    <div class="opening" id="sec1">
 
       <div class="head_container">
-        <h1>HOW TO BUILD YOUR OWN CUSTOM PC</h1>
           <div class="headder_img">
-            <img src="assets/Full.gif" alt="sdf"
+            <img src="assets/Full3.gif" alt="sdf"
             style="height:auto; max-width:100%; width:500px; float:right;
             padding-right:0px;margin-left:100px">
           </div>
@@ -65,68 +77,76 @@
           </center>
             </div>
       </div>
-    </div>
 
-
-
-
-
-    <div class="opening">
-      <p>PRESS TO</p>
       <center>
       <button id="scrollDown" onclick="Scroll()">
       </button>
       </center>
-      <p>START EXPLORING</p>
+
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <div class="banner" id="banner">
 
         <div class="bantext">
-          <button id="bannerButton" name="button" onclick="page1()">
+          <button id="bannerButton" name="button" onclick="page2()">
             CPU
           </button>
         </div>
         <div class="bantext">
-          <button id="bannerButton2" name="button" onclick="page2()">
+          <button id="bannerButton2" name="button" onclick="page3()">
             CPU Cooling
           </button>
         </div>
         <div class="bantext">
-          <button id="bannerButton" name="button" onclick="page3()">
+          <button id="bannerButton" name="button" onclick="page4()">
             MOTHERBOARD
           </button>
         </div>
         <div class="bantext">
-          <button id="bannerButton2" name="button" onclick="page4()">
+          <button id="bannerButton2" name="button" onclick="page5()">
             POWER SUPPLY
           </button>
         </div>
         <div class="bantext">
-          <button id="bannerButton" name="button" onclick="page5()">
+          <button id="bannerButton" name="button" onclick="page6()">
             RAM
           </button>
         </div>
         <div class="bantext">
-        <button id="bannerButton2" name="button" onclick="page6()">
+        <button id="bannerButton2" name="button" onclick="page7()">
           GPU
         </button>
         </div>
         <div class="bantext">
-          <button id="bannerButton" name="button" onclick="page7()">
+          <button id="bannerButton" name="button" onclick="page8()">
             CASE
           </button>
         </div>
         <div class="bantext">
-          <button id="bannerButton2" name="button" onclick="page8()">
+          <button id="bannerButton2" name="button" onclick="page9()">
             STORAGE
           </button>
         </div>
     </div>
 
     <div class="content">
-      <section id="sec1">
+      <section id="sec2">
         <div class="text">
           <h1>CENTER PROCESSING UNIT (CPU)</h1>
           <img src="assets/cpu.jpg" alt="cpu" style="height:auto; max-width:100%; width:500px; float:left; padding:20px;">
@@ -137,11 +157,10 @@
             before delivering an output. CPUs are in all sorts of devices ranging from computers and laptops,
             to smartphones, tablets, and smart TVs. The small and usually square chip is placed onto the device's
             motherboard and interacts with the other hardware to operate your computer.</p>
-            <p>There have been a lot of improvements over the years since the first CPUs came on the scene. Despite
-              that, the basic function of the CPU has remained the same consisting of three steps; fetch, decode, and execute.</p>
+
         </div>
       </section>
-      <section id="sec2">
+      <section id="sec3">
         <div class="text">
           <h1>CPU COOLING</h1>
           <img src="assets/Cool.gif" alt="cooler"style="height:auto; max-width:100%; width:500px; float: right; padding:20px;">
@@ -155,7 +174,7 @@
 
         </div>
       </section>
-      <section id="sec3">
+      <section id="sec4">
         <div class="text">
           <h1>MOTHERBOARD</h1>
           <img src="assets/mb.jpg" alt=""style="height:auto; max-width:100%; width:500px; float: left; padding:20px;">
@@ -166,12 +185,10 @@
                your motherboard-related questions in this simple guide.</p>
                <p>The official motherboard definition is that it’s the main printed circuit board within a computer,
                   which means it’s the primary piece of circuitry that all of the other pieces plug into to create a cohesive whole.
-                  The motherboard is the backbone that ties the computer’s components together at one spot and allows them to talk to each other. Without it,
-                  none of the computer pieces, such as the CPU, GPU, or hard drive, could interact. Total motherboard functionality is necessary for a computer
-                  to work well. If your motherboard is on the fritz, expect some big problems.</p>
+                  </p>
         </div>
       </section>
-      <section id="sec4">
+      <section id="sec5">
         <div class="text">
           <h1>POWER SUPPLY</h1>
           <img src="assets/psu.png" alt=""style="height:auto; max-width:100%; width:500px; float: right;; padding:20px;">
@@ -180,20 +197,24 @@
              regulates overheating by controlling voltage, which might change automatically or manually depending on the power supply.</p>
             <p>The power supply unit is mounted just inside the back of the case. If you follow the computer's power cable, you'll find that it attaches to the back of the power supply. It's the backside that's usually the only portion of the power supply that most people will ever see.
               There's also a fan opening at the back of the power supply that sends air out the back of the computer case.
-              The side of the PSU facing outside the case has a male, three-pronged port that a power cable, connected to a
-              power source, plugs into. There's also often a power switch and a power supply voltage switch.
-              Large bundles of colored wires extend from the opposite side of the power supply unit into the computer. Connectors
-              at the opposite ends of the wires connect to various components inside the computer to supply them with power.</p>
-        </div>
-      </section>
-      <section id="sec5">
-        <div class="text">
-          <h1>RANDOM ACCESS MEMORY (RAM)</h1>
-          <img src="assets/ram.jpg" alt=""style="height:auto; max-width:100%; width:500px; float: right;; padding:20px;">
-          <p>RAM takes the form of computer chips — integrated circuits — that are either soldered directly onto the main logic board of your computer or installed in memory modules that go in sockets on your computer’s logic board. RAM stands for Random Access Memory. The data stored in RAM can be accessed almost instantly regardless of where in memory it is stored, so it’s very fast — milliseconds fast. RAM has a very fast path to the computer’s CPU, or central processing unit, the brain of the computer that does most of the work. RAM is random access as opposed to sequential access. Data that’s accessed sequentially includes stuff that’s written to your hard disk drive, for example. It’s commonly written in files, with a specific start location and end location. We’ll get to your hard drive storage in a moment. If you have general purpose needs for your computer, you probably don’t need to tweak its RAM very much. In fact, depending on what computer you buy, you may very well not be able to change the RAM. (Apple and others have removed RAM upgradability from some of their lower-end or portable computers, for example).</p>
+
+            </p>
         </div>
       </section>
       <section id="sec6">
+        <div class="text">
+          <h1>RANDOM ACCESS MEMORY (RAM)</h1>
+          <img src="assets/ram.jpg" alt=""style="height:auto; max-width:100%; width:500px; float: right;; padding:20px;">
+          <p>RAM takes the form of computer chips — integrated circuits — that are either soldered directly onto the main
+            logic board of your computer or installed in memory modules that go in sockets on your computer’s logic board.
+             RAM stands for Random Access Memory. The data stored in RAM can be accessed almost instantly regardless of where
+              in memory it is stored, so it’s very fast — milliseconds fast. RAM has a very fast path to the computer’s CPU,
+              or central processing unit, the brain of the computer that does most of the work. RAM is random access as opposed
+              to sequential access. Data that’s accessed sequentially includes stuff that’s written to your hard disk drive.
+          </p>
+        </div>
+      </section>
+      <section id="sec7">
         <div class="text">
           <h1>GRAPHICS PROCESSING UNIT (GPU)</h1>
           <img src="assets/gpu.jpg" alt=""style="height:auto; max-width:100%; width:500px; float:left; padding:20px;">
@@ -205,13 +226,10 @@
             programmable, enhancing their capabilities. This allowed graphics programmers to create more interesting visual effects
              and realistic scenes with advanced lighting and shadowing techniques. Other developers also began to tap the power of GPUs
              to dramatically accelerate additional workloads in high performance computing (HPC), deep learning, and more.</p>
-             <p>The GPU evolved as a complement to its close cousin, the CPU (central processing unit). While CPUs have continued
-               to deliver performance increases through architectural innovations, faster clock speeds, and the addition of cores,
-               GPUs are specifically designed to accelerate computer graphics workloads. When shopping for a system, it can be helpful
-                to know the role of the CPU vs. GPU so you can make the most of both.</p>
+             <p>The GPU evolved as a complement to its close cousin, the CPU (central processing unit). .</p>
         </div>
       </section>
-      <section id="sec7">
+      <section id="sec8">
         <div class="text">
           <h1>CASE</h1>
           <img src="assets/case.jpg" alt=""style="height:auto; max-width:100%; width:500px; float:left; padding:20px;">
@@ -226,7 +244,7 @@
               keyboard, mouse, monitor, or other peripherals.</p>
         </div>
       </section>
-      <section id="sec8">
+      <section id="sec9">
         <div class="text">
           <h1>STORAGE</h1>
           <img src="assets/ssd.jpg" alt=""style="height:auto; max-width:100%; width:500px; float:left; padding:20px;">
@@ -293,11 +311,13 @@
         prevBut.id = "scrollPrev";
         nextBut.id = "scrollNext";
       }
-      else{
-        banner.classList.remove("stickTop");
+      if(window.pageYOffset <=600){
         homeBut.id = "none";
         prevBut.id = "none";
         nextBut.id = "none";
+      }
+      if(window.pageYOffset <= stick){
+        banner.classList.remove("stickTop");
       }
     }
     </script>

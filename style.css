@@ -1,7 +1,7 @@
 body{
   margin: 0px;
-
-
+color: black;
+overflow-x: hidden;;
 }
 /*
 .gridcontainer {
@@ -16,15 +16,41 @@ body{
 
 
 .headders{
-  background-color: black;
+  font-size: 50px;
+  color: white;
+  background-color: #0f0f0f;
+  background-image: url("assets/bg1.jpg");
   background-blend-mode: overlay;
   margin: 0px;
-  height:80vh;
+  height:100vh;
   width: auto;
-  display:flex;
-
+  margin-top:0px;
+  padding: 0px;
+  text-align:center;
 
 }
+.start{
+  border:1px solid #66FCF1;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  outline: none;
+  transition: 1s;
+  width: 250px;
+  height: auto;
+}
+.btn1{
+  color: #66FCF1;
+}
+.start:hover{
+  color: white;
+  background: #66FCF1;
+}
+
+
+
 
 .head_container{
   width: 80% ;
@@ -48,7 +74,7 @@ body{
   text-align: center;
 }
 .details{
-  color: #4088ed;
+  color: white;
   /*text-shadow: #9c9c9c 1px 0 15px;*/
   font-family: 'Anton', sans-serif;
   font-size: 25px;
@@ -159,7 +185,7 @@ height: 10vh;
 width: 100%;
 top:0px;
 grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ;
-position: sticky;
+position: relative;
 border-radius: 20%;
 
 }
@@ -177,25 +203,25 @@ border-radius: 20%;
   align-items: center;
 }
 #bannerButton{
-  background-color: #1e2f5e;
+  background-color: #751a1a;
   width: 100%;
   color: white;
   text-align: center;
   height:100%;
-  border-radius: 10%;
-  outline:none;
+  border:none;
+
   cursor: pointer;
 }
 #bannerButton:hover{
 background-color: #1b3787
 }
 #bannerButton2{
-  background-color: #0d1e4d;
+  background-color: #751a1a/*#0d1e4d*/;
   width: 100%;
   color: white;
   text-align: center;
   height:100%;
-  border-radius: 10%;
+  border:none;
   outline:none;
   cursor: pointer;
 }
@@ -211,9 +237,9 @@ background-color: #1b3787
   color: white;
   font-size: 40px;
   display: grid;
-  background-color: #16213e;
+  background-color: #191d29;
   margin: 0px;
-  min-height: 10vh;
+  min-height: 90vh;
   width: auto;
   grid-template-columns: 45% 10% 45%;
 }
@@ -226,6 +252,8 @@ background-color: #1b3787
   line-height: 50px;
   color: white;
   background: #185094;
+  width: auto;
+  height: auto;
 
 }
 .text:nth-child(odd){
@@ -237,13 +265,13 @@ section{
   padding: 100px;
   padding-top: 250px;
 
-  background: #16213e;
+  background: #191d29;
 }
 section:nth-child(1){
-  background: #16213e;
+  background: #191d29;
   height: 100vh;
 }
 section:nth-child(odd){
-  background: #0f3460;
+  background: #C5C6C7;
 
 }
