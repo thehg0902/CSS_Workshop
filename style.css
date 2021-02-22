@@ -222,7 +222,8 @@ background-color: #1b3787
 }
 .text{
   font-family: 'Comfortaa', cursive;
-  font-size: 20px;
+  font-size: 30px;
+  line-height: 50px;
   color: white;
   background: #185094;
 
