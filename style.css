@@ -69,9 +69,9 @@ body{
 
 
 #scrollDown{
-  background: grey;
-  background-image: url("assets/up.png");
-  background-blend-mode: overlay;
+  background-image: url("assets/down.png");
+  background-size: cover;
+
   position: sticky;
   width: 100px;
   height: 100px;
@@ -80,7 +80,9 @@ body{
   cursor: pointer;
 }
 #scrollDown:hover{
-  background: white;
+  background-image: url("assets/down.png");
+  background-color: #999999;
+  background-blend-mode:multiply;
 }
 #scrollDown:active{
   background: black;
@@ -88,24 +90,64 @@ body{
 
 
 #scrollTop{
-  background: #a1cae2;
+  background-image: url("assets/home.png");
+  background-size: cover;
+  position:fixed;
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  outline:none;
+  cursor: pointer;
+  right:10px;
+  bottom: 80px;
+}
+#scrollTop:hover{
+  background-image: url("assets/home.png");
+  background-color: #999999;
+  background-blend-mode:multiply;
+}
+
+
+
+
+
+#scrollNext{
   background-image: url("assets/up.png");
   background-size: cover;
-  background-blend-mode: overlay;
   position:fixed;
-  width:100px;
-  height:100px;
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  outline:none;
+  cursor: pointer;
+  right:10px;
+  bottom: 150px;
+}
+#scrollNext:hover{
+  background-image: url("assets/up.png");
+  background-color: #999999;
+  background-blend-mode:multiply;
+}
+
+
+
+
+#scrollPrev{
+  background-image: url("assets/next.png");
+  background-size: cover;
+  position:fixed;
+  width:60px;
+  height:60px;
   border-radius: 50%;
   outline:none;
   cursor: pointer;
   right:10px;
   bottom: 10px;
 }
-#scrollTop:hover{
-  background: white;
-  background-image: url("assets/up.png");
-  background-size: cover;
-  background-blend-mode: overlay;
+#scrollPrev:hover{
+  background-image: url("assets/next.png");
+  background-color: #999999;
+  background-blend-mode:multiply;
 }
 
 
@@ -117,24 +159,49 @@ height: 10vh;
 width: 100%;
 top:0px;
 grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ;
+position: sticky;
+border-radius: 20%;
 
 }
-
 .stickTop{
   position: fixed;
-  top:0;
-  width: 100%
 }
-
-
 .banner > div{
-  background: #eee;
-  padding:1em;
+  background: #0d1e4d;
+
 }
 .banner > div:nth-child(odd){
-  background: #ddd;
+  background:#1e2f5e;
 }
-
+.bantext{
+  align-items: center;
+}
+#bannerButton{
+  background-color: #1e2f5e;
+  width: 100%;
+  color: white;
+  text-align: center;
+  height:100%;
+  border-radius: 10%;
+  outline:none;
+  cursor: pointer;
+}
+#bannerButton:hover{
+background-color: #1b3787
+}
+#bannerButton2{
+  background-color: #0d1e4d;
+  width: 100%;
+  color: white;
+  text-align: center;
+  height:100%;
+  border-radius: 10%;
+  outline:none;
+  cursor: pointer;
+}
+#bannerButton2:hover{
+  background-color: #152c6e;
+}
 
 
 
@@ -157,7 +224,11 @@ grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ;
   font-family: 'Comfortaa', cursive;
   font-size: 20px;
   color: white;
+  background: #185094;
 
+}
+.text:nth-child(odd){
+  background: #253663;
 }
 
 section{
@@ -166,6 +237,10 @@ section{
   padding-top: 250px;
 
   background: #16213e;
+}
+section:nth-child(1){
+  background: #16213e;
+  height: 100vh;
 }
 section:nth-child(odd){
   background: #0f3460;

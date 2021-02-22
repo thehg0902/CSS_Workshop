@@ -60,7 +60,7 @@
             <br>
             - Case -
             <br>
-            - Memory -
+            - Storage -
             <br>
           </center>
             </div>
@@ -75,7 +75,6 @@
       <p>PRESS TO</p>
       <center>
       <button id="scrollDown" onclick="Scroll()">
-        test
       </button>
       </center>
       <p>START EXPLORING</p>
@@ -83,29 +82,46 @@
 
 
     <div class="banner" id="banner">
-        <div>
-          1
+
+        <div class="bantext">
+          <button id="bannerButton" name="button" onclick="page1()">
+            CPU
+          </button>
         </div>
-        <div>
-          2
+        <div class="bantext">
+          <button id="bannerButton2" name="button" onclick="page2()">
+            CPU Cooling
+          </button>
         </div>
-        <div>
-          3
+        <div class="bantext">
+          <button id="bannerButton" name="button" onclick="page3()">
+            MOTHERBOARD
+          </button>
         </div>
-        <div>
-          4
+        <div class="bantext">
+          <button id="bannerButton2" name="button" onclick="page4()">
+            POWER SUPPLY
+          </button>
         </div>
-        <div>
-          5
+        <div class="bantext">
+          <button id="bannerButton" name="button" onclick="page5()">
+            RAM
+          </button>
         </div>
-        <div>
-          6
+        <div class="bantext">
+        <button id="bannerButton2" name="button" onclick="page6()">
+          GPU
+        </button>
         </div>
-        <div>
-          7
+        <div class="bantext">
+          <button id="bannerButton" name="button" onclick="page7()">
+            CASE
+          </button>
         </div>
-        <div>
-          8
+        <div class="bantext">
+          <button id="bannerButton2" name="button" onclick="page8()">
+            STORAGE
+          </button>
         </div>
     </div>
 
@@ -113,56 +129,56 @@
 
       <section id="sec1">
         <div class="text">
-          <h1>Title 1</h1>
+          <h1>CENTER PROCESSING UNIT (CPU)</h1>
           <p>details</p>
         </div>
       </section>
 
       <section id="sec2">
         <div class="text">
-          <h1>Title 2</h1>
+          <h1>CPU COOLING</h1>
           <p>details</p>
         </div>
       </section>
 
       <section id="sec3">
         <div class="text">
-          <h1>Title 3</h1>
+          <h1>MOTHERBOARD</h1>
           <p>details</p>
         </div>
       </section>
 
       <section id="sec4">
         <div class="text">
-          <h1>Title 4</h1>
+          <h1>POWER SUPPLY</h1>
           <p>details</p>
         </div>
       </section>
 
       <section id="sec5">
         <div class="text">
-          <h1>Title 5</h1>
+          <h1>RANDOM ACCESS MEMORY (RAM)</h1>
           <p>details</p>
         </div>
       </section>
 
       <section id="sec6">
         <div class="text">
-          <h1>Title 6</h1>
+          <h1>GRAPHICS PROCESSING UNIT (GPU)</h1>
           <p>details</p>
         </div>
       </section>
 
       <section id="sec7">
         <div class="text">
-          <h1>Title 7</h1>
+          <h1>CASE</h1>
           <p>details</p>
         </div>
       </section>
 
       <section id="sec8">
         <div class="text">
-          <h1>Title 8</h1>
+          <h1>STORAGE</h1>
           <p>details</p>
         </div>
       </section>
@@ -177,6 +193,10 @@
 
     <button id="none" class= "home" onclick="ScrollTop()">
     </button>
+    <button id="noneN" class= "next" onclick="ScrollNext()">
+    </button>
+    <button id="noneP" class= "prev" onclick="ScrollPrev()">
+    </button>
 
 
 
@@ -185,18 +205,29 @@
     window.onscroll = function(){topStick()};
 
     var banner = document.getElementById("banner");
-    var homeBut = document.getElementById("none");
     var stick = banner.offsetTop;
+
+    var homeBut = document.getElementById("none");
+    var nextBut = document.getElementById("noneN");
+    var prevBut  = document.getElementById("noneP");
 
     function topStick(){
       if(window.pageYOffset > stick){
         banner.classList.add("stickTop");
+
+      }
+      if(window.pageYOffset >= 600){
+        console.log("test");
         homeBut.id = "scrollTop";
-
-
-      }else{
+        prevBut.id = "scrollPrev";
+        nextBut.id = "scrollNext";
+        console.log(window.pageYOffset);
+      }
+      else{
         banner.classList.remove("stickTop");
         homeBut.id = "none";
+        prevBut.id = "none";
+        nextBut.id = "none";
       }
     }
     </script>
